@@ -1,6 +1,6 @@
 import './App.css'
 
-const element1 = <h2>Hello, World!</h2>
+const element1 = <h2>Hello, World!</h2> // JSX 는 자바스크립트 객체로 변환되기 때문에 반드시 태그를 닫아줘야한다.
 const element2 = (
 	<ul>
 		<li>A</li>
@@ -21,6 +21,7 @@ const BasicExpression = () => {
 			<p>{name + "의 프로필입니다."}</p>
 			<p>{`${name} 은 현재 ${age} 살입니다.`}</p>
 			<p>Admin Status: {String(isAdmin)}</p>
+			{/*문자열과 숫자가 아니면 렌더링 되지 않는다. */}
 		</div>
 	)
 }
