@@ -3,6 +3,11 @@ import InfoCard from "./InfoCard.jsx";
 import ProductCard from "./ProductCard.jsx";
 import CardLayout from "./CardLayout.jsx";
 
+import withConditionalCard from "./withConditionalCard.jsx";
+import SimpleCard from "./SimpleCard.jsx";
+
+const ConditionalCard = withConditionalCard(SimpleCard);
+
 /*const cardData1 = {
 	title: 'Props in React',
 	content: 'Props pass data from one component to another.',
@@ -56,7 +61,7 @@ const App = () => {
 					<p>Props of Components</p>
 				</CardLayout>
 				<CardLayout title={'Details'}>
-					<ul>
+					<ul className={'list-disc pl-5 space-y-1'}>
 						<li>Feature A</li>
 						<li>Feature B</li>
 						<li>Feature C</li>
@@ -67,6 +72,16 @@ const App = () => {
 					<p>Phone: 123-456-7890</p>
 				</CardLayout>
 			</div>
+			<ConditionalCard
+				title={'Active Card'}
+				content={'This card is active.'}
+				disabled={false}
+			/>
+			<ConditionalCard
+				title={'Disabled Card'}
+				content={'This card is disabled.'}
+				disabled={true}
+			/>
 		</>
 	)
 }
