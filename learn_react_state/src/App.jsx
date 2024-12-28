@@ -16,7 +16,7 @@ const App = () => {
 				<section className={'flex flex-col justify-center items-center mb-12'}>
 					<h2 className={'text-2xl'}>Count: {count}</h2>
 					<div>
-						<SmallButton name={'+'} onClick={() => setCount(count + 1)}/>
+						<SmallButton name={'+'} onClick={() => setCount(v => v + 1)}/>
 						<SmallButton name={'-'} onClick={() => setCount(count - 1)}/>
 					</div>
 				</section>
