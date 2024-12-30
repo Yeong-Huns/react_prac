@@ -13,7 +13,8 @@ export const initialState = {
 }
 
 export const countReducer = (state, action) => {
-	const { value } = action.payload;
+	const value = action.payload;
+
 	const { x,y } = action.meta;
 	switch (action.type) {
 		case 'INCREMENT':
