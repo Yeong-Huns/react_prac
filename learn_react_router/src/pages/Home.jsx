@@ -1,4 +1,5 @@
 import {SectionTag} from "../components/atoms/SectionTag.jsx";
+import {Outlet} from "react-router-dom";
 
 const Home = () => (
 	<SectionTag>
@@ -6,6 +7,7 @@ const Home = () => (
 		<p>
 			Welcome to Web Dev Class!
 		</p>
+		<Outlet/>
 	</SectionTag>
 )
 
