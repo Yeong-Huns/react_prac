@@ -1,5 +1,7 @@
+import {SectionTag} from "../components/atoms/SectionTag.jsx";
+
 const Contact = () => (
-	<>
+	<SectionTag>
 		<h2>Contact</h2>
 		<address>
 			email:
@@ -7,7 +9,7 @@ const Contact = () => (
 				vosxja1@gmail.com
 			</a>
 		</address>
-	</>
+	</SectionTag>
 )
 
 export default Contact;
